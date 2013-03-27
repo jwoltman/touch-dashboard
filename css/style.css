@@ -1,0 +1,42 @@
+/* Dock */
+
+body {
+  margin: 0px;
+  overflow: hidden;
+}
+
+#dock {
+/* Required css, you can adjust the values, but the properties must remain */
+/* set "margin-left" to half the width of <div id="dock">, calculate the width of this <div> by adding up the widths of the <img>'s plus paddings and margins */
+position: fixed;
+z-index: 10;
+/*bottom: -36px; */
+width: 60px;
+height: 100%;
+margin-top: 0px;
+/* Optional css */
+left: -56px;
+padding: 4px 2px;
+border: 0px;
+background-color: #1B1B1B;
+}
+
+#contentframe {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+#dock img {
+/* Required css, you can adjust the values, but the properties must remain */
+/* float: left; */
+height: 32px;
+width: 32px;
+margin-top: 8px;
+/* Optional css */
+margin-left: 4px;
+margin-right: 4px;
+border: 0px;
+}
