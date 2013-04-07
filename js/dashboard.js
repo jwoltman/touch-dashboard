@@ -12,4 +12,21 @@ $(document).ready(function(){
 		return false;
 	});
 
+	view(1);
 });
+
+view = function(index) {
+	var links = $('#dock a');
+
+	setTimeout(function() {
+		$('#contentframe').attr('src', links[index]);
+
+		if (index >= links.length) {
+			index = 0;
+		} else {
+			index = index + 1;
+		}
+
+		view(index);
+	}, 3000); // Roteer om de 3000 milliseconden
+}
